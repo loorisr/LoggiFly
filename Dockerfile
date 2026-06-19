@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN pip install --prefix=/install --no-cache-dir -r requirements.txt
 
 # --- Final Stage: distroless ---
-FROM gcr.io/distroless/python3-debian12
+FROM gcr.io/distroless/python3-debian13
 
 WORKDIR /app
 # USER 1000:1000
